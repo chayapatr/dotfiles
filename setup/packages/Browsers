@@ -1,0 +1,3 @@
+cask "microsoft-edge"
+cask "google-chrome"
+cask "tor-browser"

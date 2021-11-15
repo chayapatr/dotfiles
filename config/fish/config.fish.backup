@@ -1,0 +1,18 @@
+# tmux 
+alias tnst="tmux new-session -t"
+alias tnw="tmux new-window"
+
+alias tkse="tmux kill-server"
+alias tks="tmux kill-session"
+alias tkw="tmux kill-window"
+alias tkp="tmux kill-pane"
+
+alias ta="tmux attach"
+alias td="tmux detach"
+
+# alias
+alias alicon="vim ~/.config/fish/config.fish"
+
+alias l="exa -la"
+
+thefuck --alias | source

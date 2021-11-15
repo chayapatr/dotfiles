@@ -1,0 +1,7 @@
+cask "visual-studio-code"
+
+cask "postman"
+cask "ngrok"
+cask "docker"
+
+cask "iterm2"

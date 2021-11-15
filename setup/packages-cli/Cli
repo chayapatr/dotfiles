@@ -1,0 +1,26 @@
+brew "zsh"
+brew "bash"
+brew "fish"
+
+brew "tmux"
+
+brew "bat"
+brew "exa"
+brew "fx"
+
+brew "curl"
+brew "wget"
+
+brew "git"
+brew "gh"
+
+brew "grep"
+
+brew "tmux"
+
+brew "neovim"
+
+brew "editorconfig"
+brew "emojify"
+brew "openssh"
+brew "nmap"

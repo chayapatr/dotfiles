@@ -1,0 +1,10 @@
+brew "cowsay"
+brew "figlet"
+brew "lolcat"
+
+brew "htop"
+brew "glances"
+
+brew "warp-dir
+
+brew "tldr"

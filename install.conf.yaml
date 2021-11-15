@@ -1,0 +1,28 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ["~"]
+
+- link:
+    ~/.Brewfile: Brewfile
+    ~/.tmux.conf: .tmux.conf
+    ~/.dots: .
+    ~/.config/:
+      glob: true
+      path: config/*
+      relink: true
+      create: true
+
+- create:
+    - ~/.config
+    - ~/Works
+    - ~/Codes
+    - ~/Randoms
+
+- shell:
+    - description: automatically setup the system environment.
+      command: bash setup.sh
+      stdout: true
+      stderr: true
+      quiet: false
