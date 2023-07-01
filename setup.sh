@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
-# Set Fish as default shell
+# install brew packages
+brew bundle install
 
+# Set Fish as default shell
 FISH="$(which fish)"
 DEFAULT_SHELL=$(dscl . -read ~/ UserShell | sed 's/UserShell: //')
 
@@ -10,7 +12,6 @@ sudo chsh -s $FISH
 echo "✅ use $FISH as the login shell!"
 
 # Install OMF
-
 if [ ! -d "$HOME/.local/share/omf/" ]
 then
   echo "🌟 Installing oh-my-fish..."
@@ -30,6 +31,9 @@ then
 else
   echo "👍 oh-my-fish is already installed."
 fi
+
+# add brew to fish path
+set -U fish_user_paths /opt/homebrew/bin/ $fish_user_paths
 
 # show all files
 echo "🔧 Show hidden files"
