@@ -32,3 +32,5 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # ls
 alias ls="eza"
+
+alias c="code ."
