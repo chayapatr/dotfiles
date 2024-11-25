@@ -5,12 +5,13 @@ end
 set -g hydro_symbol_prompt 🐱
 
 alias obs="open . -a 'obsidian'"
-source /usr/local/opt/asdf/libexec/asdf.fish
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
 
 # pnpm
 set -gx PNPM_HOME "/Users/chayapatr/Library/pnpm"
 set -gx PATH "$PNPM_HOME" $PATH
-# pnpm end
+alias pi="pnpm install"
+alias pd="pnpm run dev"
 
 # tmux 
 alias tnst="tmux new-session -t"
@@ -23,7 +24,11 @@ alias tkp="tmux kill-pane"
 
 alias ta="tmux attach"
 alias td="tmux detach"
-#tmux end
+
 # bun
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# ls
+alias ls="eza"
