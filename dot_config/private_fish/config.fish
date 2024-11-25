@@ -30,6 +30,9 @@ set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+# git
+alias gp="git push"
+
 # ls
 alias ls="eza"
 
